@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
-import Web3Modal from "web3Modal";
-import {ethers} from "ethers";
+import Web3Modal from "web3modal";
+import { ethers } from "ethers";
 
 import{toDoListAddress, toDoListABI} from "./constant";
 
@@ -33,7 +33,7 @@ export const ToDoListProvider = ({children}) => {
     const connectWallet = async() => {
         if(!window.ethereum) return setError("Please install metamask");
 
-        const account = await window.ethereum.request({method: "eth_requestAccount"});
+        const account = await window.ethereum.request({method: "eth_requestAccounts"});
 
         setCurrentAccount(account[0]);
     };

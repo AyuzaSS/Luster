@@ -7,7 +7,7 @@ import Image from "next/image";
 import {ToDoListContext} from "../../context/ToDoListApp";
 import Style from "../styles/indexModule.css";
 import Loading from "../styles/Loading.gif";
-import Data from "../components/data.jsx";
+import Data from "../todo/components/Data.jsx";
 
 
 
